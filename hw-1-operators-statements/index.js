@@ -110,25 +110,18 @@ const calculateResult = (num1, num2, operation) => {
 // Create multiply table multiplying all digits from 2 t0 9 on 1 - 10 and write result in string
 const getMultiplicationTable = () => {
   let num;
-  let str;
+ let j;
+ let i;
   
   for (let i=2; i<10; i++){
     for (let j=1; j<11; j++){
       num=i*j;
-      /**str= '==='+i+'===\n'+i+'*'+j+'='+ num;*/
-      let str;
+      Table= '==='+i+'===\n'+i+'*'+j+'='+ num;
     }
-  
+   
   }
-  
-  str= '==='+(i++)+'===\n'+(i++)+'*'+(j++)+'='+ num;
-  return str;
+  return Table;
 }
-
-
- 
-
-
 
 
 module.exports = {
